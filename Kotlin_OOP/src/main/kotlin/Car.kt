@@ -1,6 +1,9 @@
 import jdk.jfr.Category
 
 class Car (private val Category: String,private val Brand: String,private val Model: String,private val Year: Int) {
+
+    // second constructor for defult year (2023)
+    constructor(Category: String,Brand: String,Model: String):this(Category,Brand,Model,2023)
     var Version: String = ""
         get() = field.uppercase()
         set(value) {
